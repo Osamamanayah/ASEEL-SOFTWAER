@@ -73,3 +73,54 @@
 		border-right: solid 4px rgba(144, 144, 144, 0.25);
 		padding: 0.5rem 2rem 0.5rem 0;
 	}
+
+/* Legibility */
+
+	/*
+		The Latin design runs on a 300 weight at half-black, which Poppins
+		carries and Cairo does not: Arabic has no capitals to anchor a line,
+		packs more detail into each glyph, and needs the extra leading for
+		what sits above and below the baseline.
+	*/
+	body {
+		color: rgba(0, 0, 0, 0.78);
+	}
+
+	body,
+	input,
+	select,
+	textarea {
+		font-weight: 400;
+		font-size: 1.05rem;
+		line-height: 1.95;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	p {
+		margin: 0 0 1.5rem 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.6;
+	}
+
+	/* the section tagline is set small and light for a spaced-out Latin caption */
+	.wrapper > header p {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+		.wrapper.style2 header p {
+			color: rgba(255, 255, 255, 0.6);
+		}
+
+	/* 25% white on the dark band is far below a readable contrast */
+	.spotlight.alt {
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+	#footer .copyright {
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 0.95rem;
+	}
