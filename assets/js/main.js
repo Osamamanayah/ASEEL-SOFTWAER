@@ -2,44 +2,30 @@
 	Caminar by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+	Rewritten without jQuery. The template shipped jQuery 1.11.3, poptrox and
+	skel to drive a gallery lightbox, a breakpoint grid and this fade; the
+	page uses none of the first two any more, and the fade is four lines.
 */
+(function() {
 
-(function($) {
+	document.body.classList.add('is-loading');
 
-	skel.breakpoints({
-		xlarge: '(max-width: 1680px)',
-		large: '(max-width: 1280px)',
-		medium: '(max-width: 980px)',
-		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)'
+	window.addEventListener('load', function() {
+		window.setTimeout(function() {
+			document.body.classList.remove('is-loading');
+		}, 100);
 	});
 
-	$(function() {
+})();
 
-		var	$window 	= $(window),
-			$body 		= $('body'),
-			$header 	= $('#header');
-
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
-
-		// Gallery.
-			$('.gallery').poptrox();
-
+/*
+	Register the service worker so the site can be installed to a home screen
+	and opened offline. Service workers only run over https (or localhost), so
+	this quietly does nothing when the page is opened straight off disk.
+*/
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register('sw.js').catch(function() {});
 	});
-
-})(jQuery);
+}
