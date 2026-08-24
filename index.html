@@ -4,17 +4,33 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<html>
+<html lang="en" dir="ltr">
 	<head>
 		<title>Aseel Software</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/i18n.css" />
+		<script>
+			/* set the direction before the first paint, so Arabic does not flash left-to-right */
+			try {
+				var saved = window.localStorage.getItem('aseel-lang');
+				if (saved === 'ar') {
+					document.documentElement.setAttribute('lang', 'ar');
+					document.documentElement.setAttribute('dir', 'rtl');
+				}
+			}
+			catch (e) {}
+		</script>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
+				<div class="lang-switch">
+					<button type="button" id="lang-toggle" aria-label="التبديل إلى العربية">العربية</button>
+				</div>
 				<div class="logo"><a href="index.html">Aseel <span>Software</span></a></div>
 			</header>
 
@@ -26,17 +42,17 @@
 					<section id="one" class="wrapper style1">
 
 						<div class="image fit flush">
-							<img src="images/code-workspace.png" alt="Developer workspace for programming web and mobile applications" />
+							<img src="images/programming-hero.jpg" alt="Developer workspace for programming web and mobile applications" />
 						</div>
 						<header class="special">
-							<h2>Aseel Software</h2>
-							<p>vehicula urna sed justo bibendum</p>
+							<h2 data-i18n="hero.h2">Aseel Software</h2>
+							<p data-i18n="hero.tag">vehicula urna sed justo bibendum</p>
 						</header>
 						<div class="content">
-							<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+							<p data-i18n="hero.p1">Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p data-i18n="hero.p2">Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 							<ul class="actions">
-								<li><a href="#two" class="button big">Learn More</a></li>
+								<li><a href="#two" class="button big" data-i18n="hero.cta">Learn More</a></li>
 							</ul>
 						</div>
 					</section>
@@ -44,40 +60,40 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style2">
 						<header>
-							<h2>Erat lacinia</h2>
-							<p>vehicula urna sed justo bibendum</p>
+							<h2 data-i18n="sv.h2">Erat lacinia</h2>
+							<p data-i18n="sv.tag">vehicula urna sed justo bibendum</p>
 						</header>
 						<div class="content">
 							<div class="row">
 								<div class="6u 12u$(small)">
 									<div class="box">
 										<div class="content">
-											<h3><span class="icon fa-diamond"></span> Portitor ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<h3><span class="icon fa-diamond"></span> <span data-i18n="sv.1h">Portitor ullamcorper</span></h3>
+											<p data-i18n="sv.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 										</div>
 									</div>
 								</div>
 								<div class="6u$ 12u$(small)">
 									<div class="box">
 										<div class="content">
-											<h3><span class="icon fa-paper-plane"></span> Sapien veroeros</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<h3><span class="icon fa-paper-plane"></span> <span data-i18n="sv.2h">Sapien veroeros</span></h3>
+											<p data-i18n="sv.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 										</div>
 									</div>
 								</div>
 								<div class="6u 12u$(small)">
 									<div class="box">
 										<div class="content">
-											<h3><span class="icon fa-rocket"></span> Quam lorem ipsum</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<h3><span class="icon fa-rocket"></span> <span data-i18n="sv.3h">Quam lorem ipsum</span></h3>
+											<p data-i18n="sv.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 										</div>
 									</div>
 								</div>
 								<div class="6u$ 12u$(small)">
 									<div class="box">
 										<div class="content">
-											<h3><span class="icon fa-signal"></span> Sed magna finibus</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<h3><span class="icon fa-signal"></span> <span data-i18n="sv.4h">Sed magna finibus</span></h3>
+											<p data-i18n="sv.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 										</div>
 									</div>
 								</div>
@@ -88,40 +104,40 @@
 				<!-- Three -->
 					<section id="three" class="wrapper style1">
 						<header class="special">
-							<h2>Ipsum sed dolor</h2>
-							<p>vehicula urna sed justo bibendum</p>
+							<h2 data-i18n="wk.h2">Ipsum sed dolor</h2>
+							<p data-i18n="wk.tag">vehicula urna sed justo bibendum</p>
 						</header>
 						<div class="content">
 							<div class="row">
 								<div class="4u 12u$(medium)">
 									<div class="image fit"><img src="images/programming-article-01.jpg" alt="Laptop displaying a dark code editor" /></div>
-									<h3>Interdum aenean</h3>
-									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<h3 data-i18n="wk.1h">Interdum aenean</h3>
+									<p data-i18n="wk.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 								</div>
 								<div class="4u 12u$(medium)">
 									<div class="image fit"><img src="images/programming-article-02.jpg" alt="Mobile application interface and wireframe sketches" /></div>
-									<h3>Nulla amet dolore</h3>
-									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<h3 data-i18n="wk.2h">Nulla amet dolore</h3>
+									<p data-i18n="wk.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
 									<div class="image fit"><img src="images/programming-article-03.jpg" alt="Modern programming workstation" /></div>
-									<h3>Tempus ullamcorper</h3>
-									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<h3 data-i18n="wk.3h">Tempus ullamcorper</h3>
+									<p data-i18n="wk.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 								</div>
 								<div class="4u 12u$(medium)">
 									<div class="image fit"><img src="images/programming-article-04.jpg" alt="Modular software architecture visualization" /></div>
-									<h3>Sed etiam facilis</h3>
-									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<h3 data-i18n="wk.4h">Sed etiam facilis</h3>
+									<p data-i18n="wk.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 								</div>
 								<div class="4u 12u$(medium)">
 									<div class="image fit"><img src="images/programming-article-05.jpg" alt="Application database infrastructure visualization" /></div>
-									<h3>Feugiat lorem aenean</h3>
-									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<h3 data-i18n="wk.5h">Feugiat lorem aenean</h3>
+									<p data-i18n="wk.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
 									<div class="image fit"><img src="images/programming-article-06.jpg" alt="Application deployment pipeline to the cloud" /></div>
-									<h3>Amet varius aliquam</h3>
-									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<h3 data-i18n="wk.6h">Amet varius aliquam</h3>
+									<p data-i18n="wk.p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 								</div>
 							</div>
 						</div>
@@ -132,22 +148,22 @@
 						<div class="spotlight">
 							<div class="image flush"><img src="images/programming-sidebar-01.jpg" alt="Developer typing on a mechanical keyboard" /></div>
 							<div class="inner">
-								<h3>Ante interdum</h3>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Etiam tristique libero eu nibh porttitor fermentum.</p>
+								<h3 data-i18n="hl.1h">Ante interdum</h3>
+								<p data-i18n="hl.1p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Etiam tristique libero eu nibh porttitor fermentum.</p>
 							</div>
 						</div>
 						<div class="spotlight alt">
 							<div class="image flush"><img src="images/programming-sidebar-02.jpg" alt="Connected application interfaces representing API integration" /></div>
 							<div class="inner">
-								<h3>Interdum sed dapibus</h3>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non.</p>
+								<h3 data-i18n="hl.2h">Interdum sed dapibus</h3>
+								<p data-i18n="hl.2p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non.</p>
 							</div>
 						</div>
 						<div class="spotlight">
 							<div class="image flush"><img src="images/programming-sidebar-03.jpg" alt="Responsive application across laptop tablet and phone" /></div>
 							<div class="inner">
-								<h3>Magna etiam veroeros</h3>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit.</p>
+								<h3 data-i18n="hl.3h">Magna etiam veroeros</h3>
+								<p data-i18n="hl.3p">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit.</p>
 							</div>
 						</div>
 					</section>
@@ -155,31 +171,31 @@
 				<!-- Five -->
 					<section id="five" class="wrapper style2">
 						<header>
-							<h2>Get in touch</h2>
-							<p>vehicula urna sed justo bibendum</p>
+							<h2 data-i18n="ct.h2">Get in touch</h2>
+							<p data-i18n="ct.tag">vehicula urna sed justo bibendum</p>
 						</header>
 						<div class="content">
 							<div class="box">
 								<div class="content">
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<p data-i18n="ct.p">Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 									<form method="post" action="#">
 										<div class="row uniform">
 											<div class="6u 12u$(small)">
-												<input type="text" name="contact-name" id="contact-name" value="" placeholder="Name" />
+												<input type="text" name="contact-name" id="contact-name" value="" placeholder="Name" data-i18n-placeholder="ct.name" />
 											</div>
 											<div class="6u$ 12u$(small)">
-												<input type="email" name="contact-email" id="contact-email" value="" placeholder="Email" />
+												<input type="email" name="contact-email" id="contact-email" value="" placeholder="Email" data-i18n-placeholder="ct.email" />
 											</div>
 											<div class="12u$">
-												<input type="text" name="contact-subject" id="contact-subject" value="" placeholder="Subject" />
+												<input type="text" name="contact-subject" id="contact-subject" value="" placeholder="Subject" data-i18n-placeholder="ct.subject" />
 											</div>
 											<div class="12u$">
-												<textarea name="contact-message" id="contact-message" placeholder="Enter your message" rows="6"></textarea>
+												<textarea name="contact-message" id="contact-message" placeholder="Enter your message" rows="6" data-i18n-placeholder="ct.message"></textarea>
 											</div>
 											<div class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Reset" class="alt" /></li>
+													<li><input type="submit" value="Send Message" data-i18n-value="ct.send" /></li>
+													<li><input type="reset" value="Reset" class="alt" data-i18n-value="ct.reset" /></li>
 												</ul>
 											</div>
 										</div>
@@ -188,7 +204,7 @@
 									<ul class="alt">
 										<li><span class="icon fa-envelope-o"></span> <a href="mailto:information@untitled.tld">information@untitled.tld</a></li>
 										<li><span class="icon fa-phone"></span> (000) 000-0000</li>
-										<li><span class="icon fa-home"></span> 1234 Somewhere Road #8254, Nashville, TN 00000-0000</li>
+										<li><span class="icon fa-home"></span> <span data-i18n="ct.address">1234 Somewhere Road #8254, Nashville, TN 00000-0000</span></li>
 									</ul>
 								</div>
 							</div>
@@ -210,7 +226,7 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					&copy; Aseel Software. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
+					<span data-i18n="ft.copy">&copy; Aseel Software. All rights reserved.</span> Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
 				</div>
 			</footer>
 
@@ -220,6 +236,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lang.js"></script>
 
 	</body>
 </html>
