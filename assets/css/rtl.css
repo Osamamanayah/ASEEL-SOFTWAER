@@ -1,0 +1,75 @@
+/*
+	Arabic layer for Caminar.
+
+	Loaded after main.css. The template's own layout is flex-based and
+	mirrors itself once the document direction is rtl, so what is left here
+	is the typography the Latin design takes for granted and the handful of
+	paddings written against the left edge.
+*/
+
+/* Typography */
+
+	body,
+	input,
+	select,
+	textarea,
+	button,
+	.button,
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
+	}
+
+	/* Arabic letters join up, so tracking pulls the words apart */
+	*:not(.icon) {
+		letter-spacing: normal !important;
+	}
+
+	/* and there is no upper case for it to switch to */
+	.wrapper > header p,
+	.box header p,
+	p.special,
+	.button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		text-transform: none !important;
+	}
+
+	/* the logo sets a line height below its font size, which clips Arabic */
+	#header > .logo a {
+		line-height: 1.4;
+	}
+
+/* Edges written against the left */
+
+	ul {
+		padding-left: 0;
+		padding-right: 1rem;
+	}
+
+		ul li {
+			padding-left: 0;
+			padding-right: 0.5rem;
+		}
+
+		ul.alt,
+		ul.actions,
+		ul.icons {
+			padding-right: 0;
+		}
+
+			ul.actions li,
+			ul.icons li {
+				padding: 0 0 0 1rem;
+			}
+
+				ul.actions li:last-child,
+				ul.icons li:last-child {
+					padding-left: 0;
+				}
+
+	blockquote {
+		border-left: none;
+		border-right: solid 4px rgba(144, 144, 144, 0.25);
+		padding: 0.5rem 2rem 0.5rem 0;
+	}
