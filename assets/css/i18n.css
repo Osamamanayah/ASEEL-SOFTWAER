@@ -212,3 +212,63 @@
 	#five form > textarea {
 		margin-bottom: 1rem;
 	}
+
+/* Transparent panel */
+
+	/*
+		The template puts every section on a near-opaque white panel and
+		colours the text for that panel. Dropping the panel means recolouring
+		the text for the dark page background behind it.
+	*/
+	#main > .inner {
+		background: transparent;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	#main {
+		color: rgba(255, 255, 255, 0.75);
+	}
+
+		#main h1,
+		#main h2,
+		#main h3,
+		#main h4,
+		#main h5,
+		#main h6,
+		#main strong,
+		#main b {
+			color: #FFF;
+		}
+
+		#main .wrapper > header h2:after {
+			background-color: rgba(255, 255, 255, 0.25);
+		}
+
+		#main hr {
+			border-bottom-color: rgba(255, 255, 255, 0.15);
+		}
+
+		#main ul.alt li {
+			border-top-color: rgba(255, 255, 255, 0.15);
+		}
+
+		#main input[type="text"],
+		#main input[type="email"],
+		#main textarea {
+			background: rgba(255, 255, 255, 0.075);
+			border-color: rgba(255, 255, 255, 0.25);
+			color: #FFF;
+		}
+
+			#main input[type="text"]:focus,
+			#main input[type="email"]:focus,
+			#main textarea:focus {
+				border-color: #54a354;
+			}
+
+	/* style2 now matches the page behind it, so only its header sets it apart */
+	.wrapper.style2 {
+		background: transparent;
+	}
