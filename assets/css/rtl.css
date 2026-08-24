@@ -221,3 +221,17 @@
 		}
 
 	}
+
+	/*
+		The wordmark carries a display face of its own: Reem Kufi, a
+		geometric Kufi that reads as Arabic lettering rather than as body
+		text set large. Cairo stays everywhere else.
+	*/
+	#header > .logo a {
+		font-family: "Reem Kufi", "Cairo", "Segoe UI", Tahoma, sans-serif;
+		font-weight: 600;
+	}
+
+		#header > .logo a span {
+			font-weight: 400;
+		}
