@@ -272,3 +272,26 @@
 	.wrapper.style2 {
 		background: transparent;
 	}
+
+	/*
+		The alternating spotlight carried a dark band of its own so it would
+		stand out against the white panel. With the panel gone it reads as a
+		black block behind the text, and its muted 25% text is too dim to
+		read on the page background.
+	*/
+	#main .spotlight.alt {
+		background: transparent;
+		color: rgba(255, 255, 255, 0.75);
+	}
+
+	/*
+		Section headers sit on a white block of their own. Left as they were,
+		the headings recoloured above would be white on white.
+	*/
+	#main .wrapper > header {
+		background: transparent;
+	}
+
+		#main .wrapper > header p {
+			color: rgba(255, 255, 255, 0.45);
+		}
