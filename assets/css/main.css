@@ -2920,7 +2920,7 @@
 			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
-			background-image: linear-gradient(rgba(13, 18, 23, 0.24), rgba(13, 18, 23, 0.34)), url(../../images/bg-programming.png);
+			background-image: linear-gradient(rgba(13, 18, 23, 0.22), rgba(13, 18, 23, 0.36)), url(../../images/bg-programming-portrait.png);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -2941,7 +2941,7 @@
 				body:after {
 					background-attachment: scroll;
 					background-position: top;
-					background-size: 100%;
+					background-size: cover;
 				}
 
 			}
