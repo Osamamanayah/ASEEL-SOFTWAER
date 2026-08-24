@@ -295,3 +295,14 @@
 		#main .wrapper > header p {
 			color: rgba(255, 255, 255, 0.45);
 		}
+
+	/* the quote rule sits on the leading edge, which flips with the text */
+	[dir="rtl"] blockquote {
+		border-left: none;
+		border-right: solid 4px rgba(255, 255, 255, 0.25);
+		padding: 0.5rem 2rem 0.5rem 0;
+	}
+
+	#main blockquote {
+		border-left-color: rgba(255, 255, 255, 0.25);
+	}

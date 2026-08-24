@@ -58,12 +58,28 @@
 		'sv.4p':       { en: 'The part that starts after launch: hosting, backups, security updates and monitoring, with a named contact who answers. Handovers to your own team are documented, not verbal.',
 		                 ar: 'ما يبدأ بعد الإطلاق: الاستضافة والنسخ الاحتياطي والتحديثات الأمنية والمراقبة، مع جهة اتصال محددة تردّ عليك. وإن أردت تسليم العمل لفريقك فالتسليم موثّق لا شفهي.' },
 
-		/* Work */
 
-		'wk.h2':       { en: 'The kind of work we take on', ar: 'نوعية الأعمال التي ننفذها' },
-		'wk.tag':      { en: 'websites · apps · stores · integration · data · cloud',
-		                 ar: 'مواقع · تطبيقات · متاجر · تكامل · بيانات · سحابة' },
 
+		/* Reviews -- placeholder wording until real client quotes arrive */
+
+		'rv.h2':       { en: 'What clients say', ar: 'ماذا يقول عملاؤنا' },
+		'rv.tag':      { en: 'placeholder quotes -- replace before launch',
+		                 ar: 'نصوص مؤقتة -- استبدلها قبل الإطلاق' },
+
+		'rv.1q':       { en: 'They asked about the work before they talked about technology, and what was delivered matched what we agreed at the start. Our staff were using it the week it landed.',
+		                 ar: 'سألوا عن طبيعة عملنا قبل أن يتحدثوا عن التقنية، وجاء المُسلَّم مطابقاً لما اتفقنا عليه في البداية. وبدأ موظفونا باستخدامه في الأسبوع نفسه.' },
+		'rv.1n':       { en: 'Client name', ar: 'اسم العميل' },
+		'rv.1r':       { en: 'company and role', ar: 'الشركة والمنصب' },
+
+		'rv.2q':       { en: 'The app went to both stores without us having to chase anyone, and the updates since have arrived on time.',
+		                 ar: 'نُشر التطبيق في المتجرين دون أن نضطر لمتابعة أحد، والتحديثات بعده تصل في موعدها.' },
+		'rv.2n':       { en: 'Client name', ar: 'اسم العميل' },
+		'rv.2r':       { en: 'company and role', ar: 'الشركة والمنصب' },
+
+		'rv.3q':       { en: 'We kept the systems we already had. They connected them instead of asking us to start over, which is why the project stayed inside budget.',
+		                 ar: 'أبقينا على أنظمتنا القائمة، فربطوها ببعضها بدل أن يطلبوا منا البدء من الصفر، ولهذا بقي المشروع داخل الميزانية.' },
+		'rv.3n':       { en: 'Client name', ar: 'اسم العميل' },
+		'rv.3r':       { en: 'company and role', ar: 'الشركة والمنصب' },
 
 		/* Highlights */
 
