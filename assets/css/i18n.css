@@ -200,3 +200,15 @@
 				}
 
 		}
+
+/* Contact form */
+
+	/*
+		The template lays its forms out with the skel grid. This page keeps to
+		the components the Caminar demo itself uses, so the fields stack and
+		need their own spacing.
+	*/
+	#five form > input,
+	#five form > textarea {
+		margin-bottom: 1rem;
+	}

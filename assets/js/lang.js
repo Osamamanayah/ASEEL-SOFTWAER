@@ -36,7 +36,6 @@
 		                 ar: 'نبني المواقع الإلكترونية وتطبيقات الجوال والأنظمة البرمجية التي تعمل خلفها. نتولى العمل من أول رسم للواجهة حتى تشغيله على الخوادم، فيكون أمامك فريق واحد تتعامل معه.' },
 		'hero.p2':     { en: 'Every project starts with the problem, not the technology. We map out what the work actually needs to do, agree the scope with you in writing, then build it in short stages you can see and try as they land — so nothing is a surprise at delivery.',
 		                 ar: 'نبدأ كل مشروع من المشكلة لا من التقنية. نحدد ما يجب أن يفعله العمل فعلاً، ونتفق معك على النطاق كتابةً، ثم ننفذه على مراحل قصيرة تراها وتجربها أولاً بأول — فلا تكون هناك مفاجآت عند التسليم.' },
-		'hero.cta':    { en: 'What we do', ar: 'ما نقدّمه' },
 
 		/* Services */
 
@@ -62,31 +61,9 @@
 		/* Work */
 
 		'wk.h2':       { en: 'The kind of work we take on', ar: 'نوعية الأعمال التي ننفذها' },
-		'wk.tag':      { en: 'from a landing page to a full platform', ar: 'من صفحة واحدة إلى منصة متكاملة' },
+		'wk.tag':      { en: 'websites · apps · stores · integration · data · cloud',
+		                 ar: 'مواقع · تطبيقات · متاجر · تكامل · بيانات · سحابة' },
 
-		'wk.1h':       { en: 'Company websites', ar: 'مواقع الشركات' },
-		'wk.1p':       { en: 'A site that explains what a business does and brings in enquiries — clear structure, fast pages, and content the client can edit without calling us.',
-		                 ar: 'موقع يشرح عمل الشركة ويجلب لها طلبات العملاء — بنية واضحة وصفحات سريعة ومحتوى يعدّله العميل دون الرجوع إلينا.' },
-
-		'wk.2h':       { en: 'Mobile applications', ar: 'تطبيقات الجوال' },
-		'wk.2p':       { en: 'Apps for customers or for staff in the field: we start from the screens, agree them with you before a line of code, then build against that.',
-		                 ar: 'تطبيقات للعملاء أو لموظفي الميدان: نبدأ من تصميم الشاشات ونتفق عليها معك قبل كتابة سطر واحد من الشيفرة، ثم ننفذ على أساسها.' },
-
-		'wk.3h':       { en: 'Online stores', ar: 'المتاجر الإلكترونية' },
-		'wk.3p':       { en: 'Product catalogue, cart, local payment gateways and delivery, joined up with whatever you use to track stock so the numbers stay in one place.',
-		                 ar: 'عرض المنتجات وسلة الشراء وبوابات الدفع المحلية والشحن، موصولة بنظام المخزون لديك حتى تبقى الأرقام في مكان واحد.' },
-
-		'wk.4h':       { en: 'System integration', ar: 'تكامل الأنظمة' },
-		'wk.4p':       { en: 'Getting separate systems to talk: accounting, CRM, government portals, payment providers. Usually the cheapest fix, because nothing has to be replaced.',
-		                 ar: 'ربط الأنظمة المنفصلة ببعضها: المحاسبة وإدارة العملاء والبوابات الحكومية ومزودي الدفع. وغالباً يكون هذا أقل الحلول كلفة لأنه لا يستبدل شيئاً.' },
-
-		'wk.5h':       { en: 'Databases and reporting', ar: 'قواعد البيانات والتقارير' },
-		'wk.5p':       { en: 'Designing where the data lives and how it is read back — dashboards and reports that answer the questions management actually asks.',
-		                 ar: 'تصميم مكان حفظ البيانات وطريقة قراءتها — لوحات ومؤشرات وتقارير تجيب عن الأسئلة التي تطرحها الإدارة فعلاً.' },
-
-		'wk.6h':       { en: 'Deployment and cloud', ar: 'النشر والاستضافة السحابية' },
-		'wk.6p':       { en: 'Moving a project onto servers that can carry it, with automated deployment so a fix reaches users the same day it is written.',
-		                 ar: 'نقل المشروع إلى خوادم تتحمله، مع نشر آلي يوصل الإصلاح إلى المستخدمين في اليوم نفسه الذي يُكتب فيه.' },
 
 		/* Highlights */
 
