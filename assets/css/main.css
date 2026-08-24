@@ -2920,7 +2920,7 @@
 			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
-			background-image: linear-gradient(rgba(13, 18, 23, 0.22), rgba(13, 18, 23, 0.36)), url(../../images/bg-programming-portrait.png);
+			background-image: linear-gradient(rgba(18, 19, 21, 0.16), rgba(18, 19, 21, 0.28)), url(../../images/bg-programming-portrait-harmonized.png);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
