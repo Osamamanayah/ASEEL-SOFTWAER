@@ -124,3 +124,47 @@
 		color: rgba(255, 255, 255, 0.8);
 		font-size: 0.95rem;
 	}
+
+/* Wordmark */
+
+	/*
+		The template splits the logo into a 4rem name over a 1rem tag, which
+		works for "Aseel Software" but not for a name Arabic reads as one
+		phrase: the second half came out too small to belong to the first.
+		Both halves grow, and the breakpoints are restated because the ones
+		in main.css come earlier in the cascade.
+	*/
+	#header > .logo a {
+		font-size: 5.5rem;
+	}
+
+		#header > .logo span {
+			font-size: 1.75rem;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.75);
+			margin-top: 0.35rem;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		#header > .logo a {
+			font-size: 4.25rem;
+		}
+
+			#header > .logo span {
+				font-size: 1.4rem;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#header > .logo a {
+			font-size: 3rem;
+		}
+
+			#header > .logo span {
+				font-size: 1.15rem;
+			}
+
+	}
