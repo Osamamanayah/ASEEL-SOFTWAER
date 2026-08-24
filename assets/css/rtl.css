@@ -193,3 +193,31 @@
 			font-size: 0.85rem;
 			margin: 0;
 		}
+
+	/*
+		The template stacks the second word on its own line, which suits a
+		name over a descriptor. "الأصيل للبرمجيات" is one phrase, so it reads
+		on one line, the second word sized against the first rather than in
+		fixed units so it follows every breakpoint on its own.
+	*/
+	#header > .logo a span {
+		display: inline;
+		font-size: 0.42em;
+		margin: 0;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#header > .logo a span {
+			font-size: 0.42em;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#header > .logo a span {
+			font-size: 0.42em;
+		}
+
+	}
