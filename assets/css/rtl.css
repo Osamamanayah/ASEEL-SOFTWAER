@@ -168,3 +168,28 @@
 			}
 
 	}
+
+/* Site QR */
+
+	/*
+		Kept large enough to scan: below about 90px a phone camera struggles
+		with a code this dense, so it sits under the shortcut icons rather
+		than inline with them.
+	*/
+	#footer .qr {
+		margin: 0 0 1.5rem 0;
+	}
+
+		#footer .qr img {
+			display: block;
+			width: 110px;
+			height: auto;
+			margin: 0 auto 0.5rem auto;
+			border-radius: 4px;
+		}
+
+		#footer .qr p {
+			color: rgba(255, 255, 255, 0.65);
+			font-size: 0.85rem;
+			margin: 0;
+		}
