@@ -11,10 +11,10 @@
 
 	var strings = {
 
-		'page.title':  { en: 'Aseel Software',
-		                 ar: 'الأصيل للبرمجيات' },
+		'page.title':  { en: 'Aseel Software — web and mobile development',
+		                 ar: 'الأصيل للبرمجيات — تطوير المواقع والتطبيقات' },
 
-		'logo.main':   { en: 'Aseel',   ar: 'الأصيل' },
+		'logo.main':   { en: 'Aseel',    ar: 'الأصيل' },
 		'logo.sub':    { en: 'Software', ar: 'للبرمجيات' },
 
 		'switch':      { en: 'العربية', ar: 'English' },
@@ -23,60 +23,91 @@
 
 		'hero.h2':     { en: 'Aseel Software',
 		                 ar: 'الأصيل للبرمجيات' },
-		'hero.tag':    { en: 'vehicula urna sed justo bibendum',
-		                 ar: 'نص فرعي توضيحي' },
-		'hero.p1':     { en: 'Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.',
-		                 ar: 'هذا النص افتراضي وُضع هنا ليعطي فكرة عن شكل الصفحة بعد إضافة المحتوى الحقيقي، ويمكن استبداله في أي وقت بالنص المطلوب. الغرض منه توضيح توزيع الفقرات والمسافات بين العناصر قبل كتابة المحتوى النهائي للموقع.' },
-		'hero.p2':     { en: 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.',
-		                 ar: 'يمكنك استبدال هذه الفقرة بنبذة عن الشركة ومجالات عملها وخبرتها. النص الحالي مجرد نص تجريبي يوضح كيف تظهر الفقرات الطويلة داخل التصميم، وكيف تتوزع الأسطر والمسافات على الشاشات المختلفة.' },
-		'hero.cta':    { en: 'Learn More', ar: 'اعرف المزيد' },
+		'hero.tag':    { en: 'software · websites · mobile apps',
+		                 ar: 'برمجيات · مواقع · تطبيقات' },
+		'hero.p1':     { en: 'We build websites and mobile applications, and the software that runs behind them. From the first sketch of a screen through to the servers it runs on, we handle the whole build so you have one team to talk to.',
+		                 ar: 'نبني المواقع الإلكترونية وتطبيقات الجوال والأنظمة البرمجية التي تعمل خلفها. نتولى العمل من أول رسم للواجهة حتى تشغيله على الخوادم، فيكون أمامك فريق واحد تتعامل معه.' },
+		'hero.p2':     { en: 'Every project starts with the problem, not the technology. We map out what the work actually needs to do, agree the scope with you in writing, then build it in short stages you can see and try as they land — so nothing is a surprise at delivery.',
+		                 ar: 'نبدأ كل مشروع من المشكلة لا من التقنية. نحدد ما يجب أن يفعله العمل فعلاً، ونتفق معك على النطاق كتابةً، ثم ننفذه على مراحل قصيرة تراها وتجربها أولاً بأول — فلا تكون هناك مفاجآت عند التسليم.' },
+		'hero.cta':    { en: 'What we do', ar: 'ما نقدّمه' },
 
 		/* Services */
 
-		'sv.h2':       { en: 'Erat lacinia', ar: 'خدماتنا' },
-		'sv.tag':      { en: 'vehicula urna sed justo bibendum', ar: 'نص فرعي توضيحي' },
-		'sv.1h':       { en: 'Portitor ullamcorper', ar: 'خدمة توضيحية (١)' },
-		'sv.2h':       { en: 'Sapien veroeros',      ar: 'خدمة توضيحية (٢)' },
-		'sv.3h':       { en: 'Quam lorem ipsum',     ar: 'خدمة توضيحية (٣)' },
-		'sv.4h':       { en: 'Sed magna finibus',    ar: 'خدمة توضيحية (٤)' },
-		'sv.p':        { en: 'Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.',
-		                 ar: 'نص تجريبي يوضح وصف الخدمة. استبدله بشرح مختصر لما تقدمه الشركة في هذا المجال وما يميزه عن غيره.' },
+		'sv.h2':       { en: 'What we do', ar: 'ما نقدّمه' },
+		'sv.tag':      { en: 'four things, done properly', ar: 'أربع خدمات نتقنها' },
+
+		'sv.1h':       { en: 'Websites', ar: 'تطوير المواقع' },
+		'sv.1p':       { en: 'Company sites, online stores and web platforms — built to load fast, read well on a phone, and be found by search engines. You get a control panel to edit the content yourself, no developer needed.',
+		                 ar: 'مواقع الشركات والمتاجر الإلكترونية والمنصات — نبنيها سريعة التحميل، واضحة على شاشة الجوال، ومهيأة لمحركات البحث. ونسلّمك لوحة تحكم تعدّل بها المحتوى بنفسك دون الحاجة إلى مبرمج.' },
+
+		'sv.2h':       { en: 'Mobile apps', ar: 'تطبيقات الجوال' },
+		'sv.2p':       { en: 'Applications for iOS and Android from one codebase, so both platforms stay in step and cost less to maintain. We take care of store submission and the updates that follow.',
+		                 ar: 'تطبيقات لنظامي iOS و Android من شيفرة واحدة، فيبقى النظامان متطابقين وتقل كلفة الصيانة. ونتولى نشر التطبيق في المتاجر ومتابعة تحديثاته.' },
+
+		'sv.3h':       { en: 'Custom software', ar: 'برمجيات مخصصة' },
+		'sv.3p':       { en: 'Internal systems shaped around how your organisation actually works — inventory, billing, bookings, reporting. Built to connect to the tools you already run rather than replace them.',
+		                 ar: 'أنظمة داخلية مفصّلة على طريقة عمل مؤسستك فعلاً — المخزون والفوترة والحجوزات والتقارير. نبنيها لتتصل بالأدوات التي تستخدمها بالفعل بدل أن تستبدلها.' },
+
+		'sv.4h':       { en: 'Support and hosting', ar: 'الدعم والاستضافة' },
+		'sv.4p':       { en: 'The part that starts after launch: hosting, backups, security updates and monitoring, with a named contact who answers. Handovers to your own team are documented, not verbal.',
+		                 ar: 'ما يبدأ بعد الإطلاق: الاستضافة والنسخ الاحتياطي والتحديثات الأمنية والمراقبة، مع جهة اتصال محددة تردّ عليك. وإن أردت تسليم العمل لفريقك فالتسليم موثّق لا شفهي.' },
 
 		/* Work */
 
-		'wk.h2':       { en: 'Ipsum sed dolor', ar: 'أعمالنا' },
-		'wk.tag':      { en: 'vehicula urna sed justo bibendum', ar: 'نص فرعي توضيحي' },
-		'wk.1h':       { en: 'Interdum aenean',      ar: 'مشروع توضيحي (١)' },
-		'wk.2h':       { en: 'Nulla amet dolore',    ar: 'مشروع توضيحي (٢)' },
-		'wk.3h':       { en: 'Tempus ullamcorper',   ar: 'مشروع توضيحي (٣)' },
-		'wk.4h':       { en: 'Sed etiam facilis',    ar: 'مشروع توضيحي (٤)' },
-		'wk.5h':       { en: 'Feugiat lorem aenean', ar: 'مشروع توضيحي (٥)' },
-		'wk.6h':       { en: 'Amet varius aliquam',  ar: 'مشروع توضيحي (٦)' },
-		'wk.p':        { en: 'Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.',
-		                 ar: 'نص تجريبي مكان وصف المشروع. اكتب هنا نبذة قصيرة عن العميل والمشكلة التي عالجها المشروع والنتيجة التي تحققت.' },
+		'wk.h2':       { en: 'The kind of work we take on', ar: 'نوعية الأعمال التي ننفذها' },
+		'wk.tag':      { en: 'from a landing page to a full platform', ar: 'من صفحة واحدة إلى منصة متكاملة' },
+
+		'wk.1h':       { en: 'Company websites', ar: 'مواقع الشركات' },
+		'wk.1p':       { en: 'A site that explains what a business does and brings in enquiries — clear structure, fast pages, and content the client can edit without calling us.',
+		                 ar: 'موقع يشرح عمل الشركة ويجلب لها طلبات العملاء — بنية واضحة وصفحات سريعة ومحتوى يعدّله العميل دون الرجوع إلينا.' },
+
+		'wk.2h':       { en: 'Mobile applications', ar: 'تطبيقات الجوال' },
+		'wk.2p':       { en: 'Apps for customers or for staff in the field: we start from the screens, agree them with you before a line of code, then build against that.',
+		                 ar: 'تطبيقات للعملاء أو لموظفي الميدان: نبدأ من تصميم الشاشات ونتفق عليها معك قبل كتابة سطر واحد من الشيفرة، ثم ننفذ على أساسها.' },
+
+		'wk.3h':       { en: 'Online stores', ar: 'المتاجر الإلكترونية' },
+		'wk.3p':       { en: 'Product catalogue, cart, local payment gateways and delivery, joined up with whatever you use to track stock so the numbers stay in one place.',
+		                 ar: 'عرض المنتجات وسلة الشراء وبوابات الدفع المحلية والشحن، موصولة بنظام المخزون لديك حتى تبقى الأرقام في مكان واحد.' },
+
+		'wk.4h':       { en: 'System integration', ar: 'تكامل الأنظمة' },
+		'wk.4p':       { en: 'Getting separate systems to talk: accounting, CRM, government portals, payment providers. Usually the cheapest fix, because nothing has to be replaced.',
+		                 ar: 'ربط الأنظمة المنفصلة ببعضها: المحاسبة وإدارة العملاء والبوابات الحكومية ومزودي الدفع. وغالباً يكون هذا أقل الحلول كلفة لأنه لا يستبدل شيئاً.' },
+
+		'wk.5h':       { en: 'Databases and reporting', ar: 'قواعد البيانات والتقارير' },
+		'wk.5p':       { en: 'Designing where the data lives and how it is read back — dashboards and reports that answer the questions management actually asks.',
+		                 ar: 'تصميم مكان حفظ البيانات وطريقة قراءتها — لوحات ومؤشرات وتقارير تجيب عن الأسئلة التي تطرحها الإدارة فعلاً.' },
+
+		'wk.6h':       { en: 'Deployment and cloud', ar: 'النشر والاستضافة السحابية' },
+		'wk.6p':       { en: 'Moving a project onto servers that can carry it, with automated deployment so a fix reaches users the same day it is written.',
+		                 ar: 'نقل المشروع إلى خوادم تتحمله، مع نشر آلي يوصل الإصلاح إلى المستخدمين في اليوم نفسه الذي يُكتب فيه.' },
 
 		/* Highlights */
 
-		'hl.1h':       { en: 'Ante interdum',        ar: 'عنوان توضيحي (١)' },
-		'hl.1p':       { en: 'Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Etiam tristique libero eu nibh porttitor fermentum.',
-		                 ar: 'نص تجريبي مرافق للصورة. يصلح لعرض ميزة أو مرحلة من مراحل العمل مع صورة توضيحية إلى جانبها.' },
-		'hl.2h':       { en: 'Interdum sed dapibus', ar: 'عنوان توضيحي (٢)' },
-		'hl.2p':       { en: 'Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non.',
-		                 ar: 'نص تجريبي مرافق للصورة. لاحظ أن الصورة تنتقل إلى الجهة المقابلة تلقائياً عند تغيير اللغة إلى العربية.' },
-		'hl.3h':       { en: 'Magna etiam veroeros', ar: 'عنوان توضيحي (٣)' },
-		'hl.3p':       { en: 'Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit.',
-		                 ar: 'نص تجريبي مرافق للصورة. استبدله بما تريد إبرازه للزائر، مثل طريقة العمل أو ضمان الجودة أو الدعم بعد التسليم.' },
+		'hl.1h':       { en: 'Code your next developer can read',
+		                 ar: 'شيفرة يفهمها المبرمج القادم' },
+		'hl.1p':       { en: 'A project outlives the team that wrote it. We keep the code plain and documented, and you own the repository from day one — so if you ever move the work elsewhere, it moves cleanly.',
+		                 ar: 'المشروع يبقى بعد الفريق الذي كتبه. نُبقي الشيفرة واضحة وموثّقة، ومستودع الشيفرة ملكك من اليوم الأول — فإن نقلت العمل إلى جهة أخرى يوماً، انتقل نظيفاً.' },
+
+		'hl.2h':       { en: 'Fits the systems you already run',
+		                 ar: 'يتكامل مع أنظمتك الحالية' },
+		'hl.2p':       { en: 'Most organisations do not need a new system so much as their existing ones joined together. We connect to accounting software, payment gateways and government portals through their published interfaces.',
+		                 ar: 'أكثر المؤسسات لا تحتاج نظاماً جديداً بقدر ما تحتاج ربط أنظمتها القائمة. نتصل ببرامج المحاسبة وبوابات الدفع والبوابات الحكومية عبر واجهاتها المعتمدة.' },
+
+		'hl.3h':       { en: 'Built for the phone first',
+		                 ar: 'مبني للجوال أولاً' },
+		'hl.3p':       { en: 'Most of your visitors arrive on a phone, so that is the screen we design for first and test on real devices — not just a browser window made narrow.',
+		                 ar: 'أغلب زوارك يصلون من الجوال، فهي الشاشة التي نصمم لها أولاً ونختبر عليها بأجهزة حقيقية — لا بنافذة متصفح مصغّرة فحسب.' },
 
 		/* Contact */
 
 		'ct.h2':       { en: 'Get in touch', ar: 'تواصل معنا' },
-		'ct.tag':      { en: 'vehicula urna sed justo bibendum', ar: 'نص فرعي توضيحي' },
-		'ct.p':        { en: 'Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.',
-		                 ar: 'يسعدنا تواصلك معنا. اكتب رسالتك في النموذج أدناه وسنرد عليك في أقرب وقت، أو استخدم بيانات الاتصال المرفقة.' },
+		'ct.tag':      { en: 'tell us what you need built', ar: 'أخبرنا بما تريد بناءه' },
+		'ct.p':        { en: 'Send us a short description of the project and what you want it to do. We will come back with the questions we need answered, a rough timeline and a price — before you commit to anything.',
+		                 ar: 'أرسل لنا وصفاً مختصراً للمشروع وما تريده أن يفعل، وسنعود إليك بالأسئلة التي نحتاج إجابتها ومدة تقديرية وسعر — قبل أن تلتزم بشيء.' },
 		'ct.name':     { en: 'Name',         ar: 'الاسم' },
 		'ct.email':    { en: 'Email',        ar: 'البريد الإلكتروني' },
 		'ct.subject':  { en: 'Subject',      ar: 'الموضوع' },
-		'ct.message':  { en: 'Enter your message', ar: 'اكتب رسالتك' },
+		'ct.message':  { en: 'Describe the project briefly', ar: 'اشرح مشروعك باختصار' },
 		'ct.send':     { en: 'Send Message', ar: 'إرسال الرسالة' },
 		'ct.reset':    { en: 'Reset',        ar: 'مسح' },
 		'ct.address':  { en: '1234 Somewhere Road #8254, Nashville, TN 00000-0000',
