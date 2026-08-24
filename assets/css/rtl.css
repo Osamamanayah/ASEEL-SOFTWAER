@@ -235,3 +235,17 @@
 		#header > .logo a span {
 			font-weight: 400;
 		}
+
+	/*
+		The wordmark is set in Latin now, so it goes back to the template's
+		own face; Reem Kufi is an Arabic design and has no business shaping
+		Latin letters.
+	*/
+	#header > .logo a {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+	}
+
+		#header > .logo a span {
+			font-weight: 300;
+		}
