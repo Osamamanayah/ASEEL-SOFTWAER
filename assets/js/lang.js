@@ -9,6 +9,13 @@
 
 	var STORE = 'aseel-lang';
 
+	/*
+		Company WhatsApp number in international format, digits only -- no
+		plus sign, no spaces. Change this one value and every WhatsApp link
+		on the page follows it.
+	*/
+	var WHATSAPP = "00000000000";
+
 	var strings = {
 
 		'page.title':  { en: 'Aseel Software — web and mobile development',
@@ -113,6 +120,11 @@
 		'ct.address':  { en: '1234 Somewhere Road #8254, Nashville, TN 00000-0000',
 		                 ar: '١٢٣٤ طريق سَمواير رقم ٨٢٥٤، ناشفيل، تينيسي ٠٠٠٠٠-٠٠٠٠' },
 
+		'ct.whatsapp': { en: 'Message us on WhatsApp',
+		                 ar: 'راسلنا على واتساب' },
+		'wa.text':     { en: 'Hello Aseel Software, I would like to ask about a project.',
+		                 ar: 'السلام عليكم، أود الاستفسار عن مشروع مع الأصيل للبرمجيات.' },
+
 		/* Footer */
 
 		'ft.copy':     { en: '© Aseel Software. All rights reserved.',
@@ -165,6 +177,12 @@
 			logo.firstChild.nodeValue = text('logo.main', lang) + ' ';
 			logo.querySelector('span').textContent = text('logo.sub', lang);
 		}
+
+		/* the WhatsApp links are built from the number above plus a prefilled message */
+		each("#wa-link, #wa-float-link", function(el) {
+			el.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text("wa.text", lang));
+			el.setAttribute("aria-label", text("ct.whatsapp", lang));
+		});
 
 		if (button) {
 			button.textContent = text('switch', lang);
