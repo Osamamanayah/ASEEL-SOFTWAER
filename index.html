@@ -4,34 +4,17 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<html lang="en" dir="ltr">
+<html>
 	<head>
-		<title>Aseel Software — web and mobile development</title>
+		<title>Aseel Software</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Aseel Software builds websites, mobile applications and custom business software, and supports them after launch." />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/i18n.css" />
-		<script>
-			/* set the direction before the first paint, so Arabic does not flash left-to-right */
-			try {
-				var saved = window.localStorage.getItem('aseel-lang');
-				if (saved === 'ar') {
-					document.documentElement.setAttribute('lang', 'ar');
-					document.documentElement.setAttribute('dir', 'rtl');
-				}
-			}
-			catch (e) {}
-		</script>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<div class="lang-switch">
-					<button type="button" id="lang-toggle" aria-label="التبديل إلى العربية">العربية</button>
-				</div>
 				<div class="logo"><a href="index.html">Aseel <span>Software</span></a></div>
 			</header>
 
@@ -43,123 +26,72 @@
 					<section id="one" class="wrapper style1">
 
 						<div class="image fit flush">
-							<img src="images/empty-workspace-hero.png" alt="Empty professional software development workspace" />
+							<img src="images/empty-workspace-hero.png" alt="" />
 						</div>
 						<header class="special">
-							<h2 data-i18n="hero.h2">Aseel Software</h2>
-							<p data-i18n="hero.tag">software &middot; websites &middot; mobile apps</p>
+							<h2>Software, Websites and Mobile Apps</h2>
+							<p>built, launched and looked after</p>
 						</header>
 						<div class="content">
-							<p data-i18n="hero.p1">We build websites and mobile applications, and the software that runs behind them. From the first sketch of a screen through to the servers it runs on, we handle the whole build so you have one team to talk to.</p>
-							<p data-i18n="hero.p2">Every project starts with the problem, not the technology. We map out what the work actually needs to do, agree the scope with you in writing, then build it in short stages you can see and try as they land &mdash; so nothing is a surprise at delivery.</p>
+							<p>Aseel Software builds websites and mobile applications, and the software that runs behind them. From the first sketch of a screen through to the servers it runs on, we handle the whole build, so you have one team to talk to rather than three.</p>
+							<p>Every project starts with the problem, not the technology. We map out what the work actually needs to do, agree the scope with you in writing, then build it in short stages you can see and try as they land, so nothing is a surprise at delivery. After launch we stay on for hosting, backups and updates, and if you ever move the work to your own team, it moves cleanly: the code is documented and the repository is yours from day one.</p>
 						</div>
 					</section>
 
 				<!-- Two -->
-					<section id="two" class="wrapper">
-						<header class="special">
-							<h2 data-i18n="sv.h2">What we do</h2>
-							<p data-i18n="sv.tag">four things, done properly</p>
+					<section id="two" class="wrapper style2">
+						<header>
+							<h2>What We Do</h2>
+							<p>websites &middot; mobile apps &middot; custom software &middot; support</p>
 						</header>
-						<div class="spotlight">
-							<div class="image flush"><img src="images/night-code-workspace.png" alt="Empty workspace with a website under construction" /></div>
-							<div class="inner">
-								<h3 data-i18n="sv.1h">Websites</h3>
-								<p data-i18n="sv.1p">Company sites, online stores and web platforms &mdash; built to load fast, read well on a phone, and be found by search engines. You get a control panel to edit the content yourself, no developer needed.</p>
-							</div>
-						</div>
-						<div class="spotlight alt">
-							<div class="image flush"><img src="images/responsive-devices.png" alt="Digital products shown on phone and tablet screens" /></div>
-							<div class="inner">
-								<h3 data-i18n="sv.2h">Mobile apps</h3>
-								<p data-i18n="sv.2p">Applications for iOS and Android from one codebase, so both platforms stay in step and cost less to maintain. We take care of store submission and the updates that follow.</p>
-							</div>
-						</div>
-						<div class="spotlight">
-							<div class="image flush"><img src="images/empty-code-desk.png" alt="Software being developed on an empty workstation" /></div>
-							<div class="inner">
-								<h3 data-i18n="sv.3h">Custom software</h3>
-								<p data-i18n="sv.3p">Internal systems shaped around how your organisation actually works &mdash; inventory, billing, bookings, reporting. Built to connect to the tools you already run rather than replace them.</p>
-							</div>
-						</div>
-						<div class="spotlight alt">
-							<div class="image flush"><img src="images/empty-data-center.png" alt="Cloud infrastructure running a hosted application" /></div>
-							<div class="inner">
-								<h3 data-i18n="sv.4h">Support and hosting</h3>
-								<p data-i18n="sv.4p">The part that starts after launch: hosting, backups, security updates and monitoring, with a named contact who answers. Handovers to your own team are documented, not verbal.</p>
+						<div class="content">
+							<div class="gallery">
+								<div>
+									<div class="image fit flush">
+										<a href="images/code-workspace.png"><img src="images/code-workspace.png" alt="" /></a>
+									</div>
+								</div>
+								<div>
+									<div class="image fit flush">
+										<a href="images/digital-products.png"><img src="images/digital-products.png" alt="" /></a>
+									</div>
+								</div>
+								<div>
+									<div class="image fit flush">
+										<a href="images/software-development.png"><img src="images/software-development.png" alt="" /></a>
+									</div>
+								</div>
+								<div>
+									<div class="image fit flush">
+										<a href="images/cloud-infrastructure.png"><img src="images/cloud-infrastructure.png" alt="" /></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style2">
-						<header>
-							<h2 data-i18n="rv.h2">What clients say</h2>
-							<p data-i18n="rv.tag">placeholder quotes &mdash; replace before launch</p>
-						</header>
-						<div class="content">
-
-							<blockquote data-i18n="rv.1q">They asked about the work before they talked about technology, and what was delivered matched what we agreed at the start. Our staff were using it the week it landed.</blockquote>
-							<p><strong data-i18n="rv.1n">Client name</strong> &mdash; <span data-i18n="rv.1r">company and role</span></p>
-
-							<blockquote data-i18n="rv.2q">The app went to both stores without us having to chase anyone, and the updates since have arrived on time.</blockquote>
-							<p><strong data-i18n="rv.2n">Client name</strong> &mdash; <span data-i18n="rv.2r">company and role</span></p>
-
-							<blockquote data-i18n="rv.3q">We kept the systems we already had. They connected them instead of asking us to start over, which is why the project stayed inside budget.</blockquote>
-							<p><strong data-i18n="rv.3n">Client name</strong> &mdash; <span data-i18n="rv.3r">company and role</span></p>
-
-						</div>
-					</section>
-
-				<!-- Four -->
-					<section id="four" class="wrapper">
+					<section id="three" class="wrapper">
 						<div class="spotlight">
-							<div class="image flush"><img src="images/empty-code-desk.png" alt="Mechanical keyboard and code monitors on an empty desk" /></div>
+							<div class="image flush"><img src="images/pair-programming.png" alt="" /></div>
 							<div class="inner">
-								<h3 data-i18n="hl.1h">Code your next developer can read</h3>
-								<p data-i18n="hl.1p">A project outlives the team that wrote it. We keep the code plain and documented, and you own the repository from day one &mdash; so if you ever move the work elsewhere, it moves cleanly.</p>
+								<h3>Websites</h3>
+								<p>Company sites, online stores and web platforms, built to load fast, read well on a phone and be found by search engines. You get a control panel to edit the content yourself, so routine changes do not need a developer.</p>
 							</div>
 						</div>
 						<div class="spotlight alt">
-							<div class="image flush"><img src="images/empty-data-center.png" alt="Connected server infrastructure without people" /></div>
-							<div class="inner">
-								<h3 data-i18n="hl.2h">Fits the systems you already run</h3>
-								<p data-i18n="hl.2p">Most organisations do not need a new system so much as their existing ones joined together. We connect to accounting software, payment gateways and government portals through their published interfaces.</p>
+							<div class="image flush"><img src="images/responsive-devices.png" alt="" /></div>
+							<div  class="inner">
+								<h3>Mobile Apps</h3>
+								<p>Applications for iOS and Android from one codebase, so both platforms stay in step and cost less to maintain. We start from the screens and agree them with you before a line of code, then handle store submission and the updates that follow.</p>
 							</div>
 						</div>
 						<div class="spotlight">
-							<div class="image flush"><img src="images/responsive-devices.png" alt="Responsive application across laptop tablet and phone" /></div>
+							<div class="image flush"><img src="images/night-code-workspace.png" alt="" /></div>
 							<div class="inner">
-								<h3 data-i18n="hl.3h">Built for the phone first</h3>
-								<p data-i18n="hl.3p">Most of your visitors arrive on a phone, so that is the screen we design for first and test on real devices &mdash; not just a browser window made narrow.</p>
+								<h3>Custom Software</h3>
+								<p>Internal systems shaped around how your organisation actually works: inventory, billing, bookings, reporting. Built to connect to the accounting software, payment gateways and portals you already run rather than replace them.</p>
 							</div>
-						</div>
-					</section>
-
-				<!-- Five -->
-					<section id="five" class="wrapper style1">
-						<header class="special">
-							<h2 data-i18n="ct.h2">Get in touch</h2>
-							<p data-i18n="ct.tag">tell us what you need built</p>
-						</header>
-						<div class="content">
-							<p data-i18n="ct.p">Send us a short description of the project and what you want it to do. We will come back with the questions we need answered, a rough timeline and a price &mdash; before you commit to anything.</p>
-							<form method="post" action="#">
-								<input type="text" name="contact-name" id="contact-name" value="" placeholder="Name" data-i18n-placeholder="ct.name" />
-								<input type="email" name="contact-email" id="contact-email" value="" placeholder="Email" data-i18n-placeholder="ct.email" />
-								<input type="text" name="contact-subject" id="contact-subject" value="" placeholder="Subject" data-i18n-placeholder="ct.subject" />
-								<textarea name="contact-message" id="contact-message" placeholder="Describe the project briefly" rows="6" data-i18n-placeholder="ct.message"></textarea>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" data-i18n-value="ct.send" /></li>
-									<li><input type="reset" value="Reset" class="alt" data-i18n-value="ct.reset" /></li>
-								</ul>
-							</form>
-							<ul class="alt">
-								<li><span class="icon fa-envelope-o"></span> <a href="mailto:information@untitled.tld">information@untitled.tld</a></li>
-								<li><span class="icon fa-phone"></span> (000) 000-0000</li>
-								<li><span class="icon fa-whatsapp"></span> <a id="wa-link" href="#" target="_blank" rel="noopener" data-i18n="ct.whatsapp">WhatsApp</a></li>
-								<li><span class="icon fa-home"></span> <span data-i18n="ct.address">1234 Somewhere Road #8254, Nashville, TN 00000-0000</span></li>
-							</ul>
 						</div>
 					</section>
 
@@ -172,20 +104,14 @@
 					<ul class="icons">
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 					</ul>
 				</div>
 				<div class="copyright">
-					<span data-i18n="ft.copy">&copy; Aseel Software. All rights reserved.</span> Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
+					&copy; Aseel Software. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
 				</div>
 			</footer>
-
-		<!-- WhatsApp shortcut -->
-			<div class="wa-float">
-				<a id="wa-float-link" class="icon fa-whatsapp" href="#" target="_blank" rel="noopener"><span class="label">WhatsApp</span></a>
-			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -193,7 +119,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/lang.js"></script>
 
 	</body>
 </html>

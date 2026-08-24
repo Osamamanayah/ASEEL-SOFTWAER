@@ -3144,68 +3144,7 @@
 
 		}
 
-	/* Unified image treatment */
-
-	#main .image {
-		overflow: hidden;
-		background: #12171b;
-	}
-
-		#main .image:after {
-			content: '';
-			position: absolute;
-			inset: 0;
-			pointer-events: none;
-			background: linear-gradient(135deg, rgba(8, 18, 25, 0.14), rgba(30, 31, 35, 0.04));
-		}
-
-		#main .image img {
-			filter: saturate(0.78) contrast(1.08) brightness(0.88);
-			transition: filter 0.35s ease, transform 0.35s ease;
-		}
-
-	#one > .image {
-		aspect-ratio: 16 / 7;
-	}
-
-		#one > .image img,
-		#three .image.fit img,
-		.spotlight .image img {
-			height: 100%;
-			object-fit: cover;
-		}
-
-	#three .image.fit {
-		aspect-ratio: 16 / 10;
-		border-radius: 3px;
-	}
-
-	.spotlight .image {
-		align-self: stretch;
-		min-height: 24rem;
-	}
-
-	@media screen and (max-width: 980px) {
-
-		.spotlight .image {
-			min-height: 20rem;
-		}
-
-	}
-
-	@media screen and (max-width: 736px) {
-
-		#one > .image {
-			aspect-ratio: 4 / 3;
-		}
-
-		.spotlight .image {
-			min-height: 16rem;
-		}
-
-	}
-
-	/* Footer */
+/* Footer */
 
 	#footer {
 		padding: 2rem 0 0.1rem 0 ;
